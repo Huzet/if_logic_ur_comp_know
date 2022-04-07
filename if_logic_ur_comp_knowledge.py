@@ -10,7 +10,6 @@ TODO
 [ ] tells user different thing based off of score
 
 """
-from json.tool import main
 import os
 import socket 
 import shutil
