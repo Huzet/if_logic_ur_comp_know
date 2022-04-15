@@ -6,7 +6,7 @@ Game that lets you check how well you know your computer
 TODO
 [ ] add option for user to see computer spec
 [ ] add windows machine
-[ ] put on github
+[X] put on github
 [ ] tells user different thing based off of score
 
 """
@@ -39,7 +39,7 @@ def get_computer_spec():
       if operating_system.sysname == "Linux":
          computer_spec["ip_address"] = socket.gethostbyname_ex(socket.gethostname())[2][0]
       else:
-         computer_spec["ip_address"] = socket.gethostbyname_ex(socket.gethostname())[2][1]
+         computer_spec["ip_address"] = socket.gethostbyname_ex(socket.gethostname())[2]
 
       # print(computer_spec)
    elif operating_system.sysname == "Windows":
